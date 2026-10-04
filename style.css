@@ -1,0 +1,23 @@
+/* CSS personalizado: fundo e efeito dos botões. */
+body {
+  font-family: Arial, sans-serif;
+  background-image: radial-gradient(circle at top, #34221e, #09090b 65%);
+}
+
+.botao {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+}
+
+.botao:focus-visible {
+  outline: 3px solid #fdba74;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .botao { transition: none; }
+  .botao:hover { transform: none; }
+}
